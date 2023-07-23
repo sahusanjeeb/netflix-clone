@@ -1,0 +1,28 @@
+.header-container {
+    height: 5.375rem;
+    display: flex;
+    align-items: center;
+}
+.netflix--icon {
+    width: 9.25rem;
+    height: 2.5rem;
+    display: block;
+}
+
+.a {
+    margin-right: auto;
+}
+
+.language-section {
+    margin: 0 0.75rem;
+    min-width: auto;
+    width: auto;
+}
+.language--container {
+    display: flex;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0.25rem;
+    background: rgba(22,22,22,0.7);
+    border-color: rgba(128,128,128,0.7);
+}
