@@ -19,10 +19,68 @@
     width: auto;
 }
 .language--container {
+    position: relative;
+    z-index: 0;
+    align-items: center;
+    gap: 2px;
+    line-height: 100%;
+    text-align: left;
     display: flex;
     border-width: 1px;
     border-style: solid;
     border-radius: 0.25rem;
     background: rgba(22,22,22,0.7);
     border-color: rgba(128,128,128,0.7);
+
+    .icon-language {
+        position: absolute;
+        pointer-events: none;
+        width: 1rem;
+        height: 1rem;
+        left: 0.75rem;
+        right: auto;
+    }
+    select {
+        font-size: 1rem;
+        min-width: auto;
+        width: auto;
+        -webkit-transition: color 250ms cubic-bezier(0.5, 0, 0.1, 1);
+        transition: color 250ms cubic-bezier(0.5, 0, 0.1, 1);
+        width: 100%;
+        color: inherit;
+        line-height: 1.25rem;
+        padding: 0.375rem 2.25rem;
+        min-height: 16px;
+        appearance: none;
+        background: transparent;
+        color: #fff;
+        background-clip: padding-box;
+        border: 0 solid transparent;
+    }
+    .icon-down {
+        position: absolute;
+        right: 0.275rem;
+        z-index: -1;
+    }    
+}
+
+.login-container {
+    box-sizing: border-box;
+    margin: 0 0 0 0.75rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    position: relative;
+    vertical-align: text-top;
+    font-size: 0.875rem;
+    font-weight: 500;
+    min-height: 2rem;
+    padding: 0.25rem 1rem;
+    background: rgb(229,9,20);
+    color: rgb(255,255,255);
+}
+
+.login-container:hover {
+    transition: .3s;
+    background: rgb(196, 8, 18);
+
 }
